@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <div class="cover">
+        <header id="dash">
+            <section class="head">
+                <div><a href="index.html"><img src="images/icon.png" alt="CampusConnect Logo" id="hero-img"></a>
+                </div>
+                <button class="hamburger" type="button" aria-label="open menu" aria-expanded="false"
+                    aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="index.html#categories">Categories</a>
+                    <a href="sell.html">Sell</a>
+                    <a href="index.html#about">About</a>
+                    <a href="dashboard.html">Profile</a>
+                    <div id="nav-icon">
+                        <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass">🔍</i></button></a>
+                        <a href="cart.html"><button><i class="fa-solid fa-cart-shopping">🛒</i><span
+                                    class="cart-count">0</span></button></a>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section id="side">
+                <div id="profile">
+                    <img src="images/profile.jpg" alt="profile picture">
+                    <p id="name">Obiorah Patrick</p>
+                    <p id="verfiy">verified student</p>
+                </div>
+                <div>
+                    <a href="#nav-links"><button type="button">Dashboard</button></a>
+                    <a href="#recent"><button type="button">My Listings</button></a>
+                    <a href="cart.html"><button type="button">Orders</button></a>
+                    <a href="#feedback"><button type="button">Feedback</button></a>
+                    <button type="button">Profile</button>
+                    <button type="button">Settings</button>
+                    <a href="login.html"><button type="button">LogOut</button></a>
+                </div>
+            </section>
+            <section id="dash-sec">
+                <h2>Dashboard</h2>
+                <p>Welcome back to Campus Connect, here's an overview of your campus connect activities.</p>
+                <p id="para"></p>
+                <div id="dash-head">
+                    <div class="dash-cards">
+                        <h3>New Listings</h3>
+                        <p>6</p>
+                    </div>
+                    <div class="dash-cards">
+                        <h3>Total Sales</h3>
+                        <p id="num">&#8358;239,000</p>
+                    </div>
+                    <div class="dash-cards">
+                        <h3>Pending Orders</h3>
+                        <p>3</p>
+                    </div>
+                </div>
+
+                <div id="recent">
+                    <h3>Recent Listings</h3>
+                    <button type="button">view all</button>
+                    <div id="listings">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="product-info"><img src="images/nike.jpg" alt="product image"> <span
+                                                class="product-name">Nike Air Force one</span></div>
+                                    </td>
+                                    <td>&#8358;65,000</td>
+                                    <td><span>Active</span></td>
+                                    <td><button class="action-btn">Remove</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-info"><img src="images/earbuds.jpg" alt="product image">
+                                            <span class="product-name">Earbuds</span>
+                                        </div>
+                                    </td>
+                                    <td>&#8358;20,000</td>
+                                    <td><span>Active</span></td>
+                                    <td><button class="action-btn">Remove</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-info"><img src="images/elect image.jpg" alt="product image">
+                                            <span class="product-name">Samsung galaxy A15</span>
+                                        </div>
+                                    </td>
+                                    <td>&#8358;120,000</td>
+                                    <td><span>Active</span></td>
+                                    <td><button class="action-btn">Remove</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-info"><img src="images/cloth.jpg" alt="product image"> <span
+                                                class="product-name">shirt and nicker</span></div>
+                                    </td>
+                                    <td>&#8358;34,000</td>
+                                    <td><span>Active</span></td>
+                                    <td><button class="action-btn">Remove</button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <h3 id="feed">Feedback</h3>
+                <section id="feedback">
+                    <form class="feedback-container" id="feedback-form">
+                        <h3>Share Your Feedback</h3>
+                        <p>We'd love to hear about your experience. Help us make CampusConnect better!</p>
+                        <h3>How was your experience</h3>
+                        <div class="emoji">
+                            <button type="button" data-rating="1" aria-label="Very bad">😞</button>
+                            <button type="button" data-rating="2" aria-label="Bad">🙁</button>
+                            <button type="button" data-rating="3" aria-label="Okay">😐</button>
+                            <button type="button" data-rating="4" aria-label="Good">🙂</button>
+                            <button type="button" data-rating="5" aria-label="Excellent">😍</button>
+                        </div>
+                        <label for="suggestions" id="suggestion">
+                            <h3>Your suggestions</h3>
+                            <textarea name="suggestions" id="suggestions"
+                                placeholder="Tell us what you think...."></textarea>
+                        </label>
+                        <button type="submit" id="feedback-btn">Submit Feedback</button>
+                        <p id="feedback-status" role="status" aria-live="polite"></p>
+                    </form>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script src="JS/common.js"></script>
+    <script src="JS/dashboard.js"></script>
+
+</body>
+
+</html>

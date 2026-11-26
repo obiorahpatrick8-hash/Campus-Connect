@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+    <div class="cover">
+        <header id="home">
+            <section class="head">
+                <div><a href="#home"><img src="images/icon.png" alt="CampusConnect Logo" id="hero-img"></a>
+                </div>
+                <button class="hamburger" type="button" aria-label="open menu" aria-expanded="false"
+                    aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="index.html#categories">Categories</a>
+                    <a href="sell.html">Sell</a>
+                    <a href="#about">About</a>
+                    <a href="dashboard.html">Profile</a>
+                    <div id="nav-icon">
+                        <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass">🔍</i></button></a>
+                        <a href="cart.html"><button><i class="fa-solid fa-cart-shopping">🛒</i><span
+                                    class="cart-count">0</span></button></a>
+                    </div>
+                </nav>
+                <div class="profile-holder"><img src="images/profile.jpg" alt="profile photo" id="profile-photo"></div>
+            </section>
+
+        </header>
+
+        <main>
+            <div class="check-head">
+                <h2>Checkout</h2>
+                <p>Complete your order securely</p>
+            </div>
+
+            <section class="info-container">
+                <div class="shipping-info">
+                    <div id="shipping-head">
+                        <p class="num">1</p>
+                        <h3>Shipping Information</h3>
+                    </div>
+
+                    <form action="" class="form">
+
+                        <label for="fullname">
+                            <p>Full Name</p>
+                            <input type="text" id="fullname" name="fullname" placeholder="enter your name" required
+                                class="forms">
+                        </label>
+                        <label for="phone-number">
+                            <p>Phone Number</p>
+                            <input type="number" id="phone-number" name="phone-number" placeholder="081 *** *** **"
+                                required class="forms">
+                        </label>
+
+                        <label for="address">
+                            <p>Address</p>
+                            <input type="text" name="address" id="address" placeholder="enter your address" required
+                                class="forms">
+                        </label>
+
+                        <div id="location">
+                            <label for="city">
+                                <p>City</p>
+                                <input type="text" name="city" id="city" placeholder="Akwa">
+                            </label>
+
+                            <label for="State">
+                                <p>State</p>
+                                <input type="text" name="State" id="state" list="states" placeholder="enter your state"
+                                    required>
+                                <datalist id="states">
+                                    <option value="Anambra"></option>
+                                    <option value="Enugu"></option>
+                                    <option value="Ebonyi"></option>
+                                    <option value="IMO"></option>
+                                    <option value="Asaba"></option>
+                                    <option value="Abuja"></option>
+                                    <option value="Kano"></option>
+                                    <option value="Edo"></option>
+                                    <option value="Lagos"></option>
+                                    <option value="PortHarcourt"></option>
+                                </datalist>
+                            </label>
+                        </div>
+                        <div class="delivery-type">
+                            <label for="">
+                                <input type="radio" name="delivery" value="1"> Standard Delivery (1-3 days)
+                                <span>&#8358;1,000</span>
+                            </label>
+                            <label for="">
+                                <input type="radio" name="delivery" value="2"> Express Delivery (Next day)
+                                <span>&#8358;2,500</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="payment">
+                    <div class="payment-head">
+                        <p class="num">2</p>
+                        <h3>Payment Method</h3>
+                    </div>
+
+                    <form action="" id="pay">
+                        <label for="card">
+                            <input type="radio" name="payment" value="1">Pay with card <span>💳</span>
+                        </label>
+                        <label for="transfer">
+                            <input type="radio" name="payment" value="2"> Bank Transfer <span>🏦</span>
+                        </label>
+                        <label for="cash">
+                            <input type="radio" name="payment" value="3"> Cash on Delivery <span>💵</span>
+                        </label>
+                    </form>
+                </div>
+            </section>
+
+            <section class="order-summary">
+                <div class="summary-head">
+                    <h2>🛒 Order Summary</h2>
+                </div>
+                <div class="checkout-cards">
+
+                </div>
+
+                <div class="price">
+                    <div id="money">
+                        <div><span>Subtotal: <strong class="money" id="subtotal">&#8358;0</strong></span></div>
+                        <div><span>Shipping: <strong class="money" id="shipping">&#8358;0</strong></span></div>
+                        <div class="total-row"><span>Total: <strong class="total" id="total">&#8358;0</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="order">
+                <p id="message"></p>
+                <button class="order-btn" type="submit">🔒 Place Order</button>
+                <p>By placing this order, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy
+                        Policy</a>.</p>
+            </div>
+
+            <p id="lock">🔐 Your Information is secure and encrypted</p>
+        </main>
+
+        <footer class="foot">
+            <div class="foot-container">
+                <div><a href="#home"><img src="images/icon.png" alt="logo" id="logo"></a></div>
+                <div id="quick-links">
+                    <b>Quick links</b>
+                    <a href="index.html">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="index.html#categories">Categories</a>
+                    <a href="sell.html">Sell</a>
+                    <a href="index.html#about" id="about">About</a>
+                    <a href="dashboard.html#feedback">Feedback</a>
+                </div>
+                <div id="support">
+                    <b>Support</b>
+                    <p>FAQs</p>
+                    <p>Shipping Info</p>
+                    <p>Return Policy</p>
+                    <p>Privacy Policy</p>
+                </div>
+
+                <div id="follow">
+                    <b>Follow Us</b><br>
+                    <a href="https://www.Instagram.com" id="instagram-link"><img src="images/instagram.jpg"
+                            alt="instagram logo" width="30px" height="30px"></a>
+                    <a href="https://www.X.com" id="X-link"><img src="images/x.jpg" alt="X logo" width="30px"
+                            height="30px"></a>
+                    <a href="https://www.facebook.com" id="facebook-link"><img src="images/facebook.jpg"
+                            alt="facebook logo" width="30px" height="30px"></a>
+                    <a href="https://www.youtube.com" id="youtube-link"><img src="images/youtube.jpg" alt="youtube logo"
+                            width="30px" height="30px"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="JS/common.js"></script>
+    <script src="JS/checkout.js"></script>
+</body>
+
+</html>

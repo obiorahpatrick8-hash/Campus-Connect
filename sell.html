@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/sell.css">
+</head>
+
+<body>
+    <div class="cover">
+        <header>
+            <section class="head">
+                <div><a href="index.html"><img src="images/icon.png" alt="logo" id="hero-img"></a></div>
+                <button class="hamburger" type="button" aria-label="open menu" aria-expanded="false"
+                    aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav-links" id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="index.html#categories">Categories</a>
+                    <a href="sell.html">Sell</a>
+                    <a href="index.html#about">About</a>
+                    <a href="dashboard.html">Profile</a>
+                </nav>
+                <div class="profile-holder">
+                    <img src="images/profile.jpg" alt="profile photo" class="profile-photo">
+                </div>
+            </section>
+        </header>
+        <main>
+            <div class="dash-head">
+                <h3>Sell An Item</h3>
+                <p>List your item and connect with students on your campus</p>
+            </div>
+            <div class="steps">
+                <div class="step active" id="indicator1">
+                    <div class="circle">1</div>
+                    <p>Details</p>
+                </div>
+                <div class="line"></div>
+                <div class="step" id="indicator2">
+                    <div class="circle">2</div>
+                    <p>Images</p>
+                </div>
+                <div class="line"></div>
+
+                <div class="step" id="indicator3">
+                    <div class="circle">3</div>
+                    <p>Preview</p>
+                </div>
+            </div>
+
+            <form action="" id="sell-form">
+                <section class="details" id="step1" hidden>
+                    <label for="product-name">
+                        <p>Product Title</p>
+                        <input type="text" name="product-name" id="product-name" placeholder="e.g. Waterbottle" required>
+                    </label>
+
+                    <label for="product-category">
+                        <p>Category</p>
+                        <input type="text" name="product-category" id="product-category" placeholder="select category"
+                            list="categories" required>
+                        <datalist id="categories">
+                            <option value="Electronics"></option>
+                            <option value="Fashion"></option>
+                            <option value="Shoes"></option>
+                            <option value="Books"></option>
+                            <option value="Home & living"></option>
+                            <option value="others"></option>
+                        </datalist>
+                    </label>
+
+                    <label for="product-price">
+                        <p>Price (&#8358;)</p>
+                        <input type="number" name="product-price" id="product-price" placeholder="enter your price" required>
+                    </label>
+
+                    <label for="product-condition">
+                        <p>Condition</p>
+                        <input type="text" name="product-condition" id="product-condition" list="conditions"
+                            placeholder="product condition" required>
+                        <datalist id="conditions">
+                            <option value="Brand New"></option>
+                            <option value="Like New"></option>
+                            <option value="Excellent"></option>
+                            <option value="Good"></option>
+                            <option value="Fair"></option>
+                        </datalist>
+                    </label>
+
+                       <label for="university">
+                    <p>University</p>
+                    <input type="text" id="university" name="university" list="universities"
+                        placeholder="Enter your university" required>
+                    <datalist id="universities">
+                        <option value="UNN"></option>
+                        <option value="Unilag"></option>
+                        <option value="Uniben"></option>
+                        <option value="Shanahan"></option>
+                        <option value="Futo"></option>
+                        <option value="Unizik"></option>
+                        <option value="COOU"></option>
+                        <option value="LASU"></option>
+                        <option value="ABU"></option>
+                        <option value="University of Ibadan"></option>
+                    </datalist>
+                </label>
+
+                    <label for="product-description">
+                        <p>Description</p>
+                        <textarea name="product-description" id="product-description"
+                            placeholder="Describe your product... (e.g. condition, features, etc.)" required></textarea>
+                    </label>
+
+                    <label for="number">
+                    <p>Phone Number</p>
+                    <input type="number" name="number" id="number" placeholder="e.g. 080 *** *** **" required>
+                    <p id="test">Your number will be visible to buyers so they can contact you.</p>
+                </label>
+
+                    <button type="button" id="next1">Next Step</button>
+                </section>
+
+
+                <section class="form-step" id="step2" hidden>
+                    <div class="upload">
+                        <h3>Upload Product Images</h3>
+                        <p id="upload-text">Add clear pictures of your product to attract buyers.</p>
+                    </div>
+
+                    <label for="product-images" class="upload-box">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h4>Upload Your Product Image</h4>
+                        <p>Click to browse or select from your device</p>
+                        <span>PNG, JPG OR JPEG</span>
+                        <input type="file" name="product-images" id="product-images" accept="image/*" multiple>
+                    </label>
+                    <div id="image-preview"></div>
+                    <div class="next-btns">
+                        <button type="button" class="back2">Back</button>
+                        <button type="button" id="next2">Continue</button>
+                    </div>
+                </section>
+
+                <section class="form-step" id="step3" hidden>
+                        <div class="preview">
+                            <h3>Preview Your Product</h3>
+                        </div>
+                        <div id="final-preview">
+                            <div class="preview-details">
+                                <p>Product Name: <span id="preview-title"></span></p>
+                                <p>Price: <span id="preview-price"></span></p>
+                                <p>Category: <span id="preview-category"></span></p>
+                                <p>Conditon: <span id="preview-condition"></span></p>
+                                <div class="line"></div>
+                                <p>Description: <span id="preview-description"></span></p>
+                            </div>
+                            <div id="preview-images"></div>
+                        </div>
+                    <div class="message">
+                        <p id="blue">i</p>
+                        <p>Please preview your information before publishing.</p>
+                    </div>
+                    <p id="message-text"></p>
+                    <div class="next-btn3">
+                        <button type="button" class="back3">Back</button>
+                        <button type="submit" class="publish">Publish Product</button>
+                    </div>
+                </section>
+            </form>
+        </main>
+    </div>
+
+    <script src="JS/common.js"></script>
+    <script src="/JS/sell.js"></script>
+</body>
+
+</html>

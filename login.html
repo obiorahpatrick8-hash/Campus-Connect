@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div id="icon">
+                <img src="images/icon.png" alt="logo">
+                <p>Your Campus. Your marketplace</p>
+            </div>
+            <div class="head">
+                <h2>Login</h2>
+                <h4>Welcome back!</h4>
+                <p>Login Into Your Account To continue</p>
+            </div>
+            <form action="" id="form" novalidate>
+                <label for="number">
+                    <p>Email or Matric Number</p>
+                    <input type="text" name="number" id="number" placeholder=" e.g. @.com or 2025/310***" required>
+                </label>
+                <p class="para"></p>
+                <label for="password">
+                    <p>Password</p>
+                    <div class="password-field">
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                        <button type="button" class="toggle-password" aria-label="Show password">
+                            <span class="eye-closed">👁️</span>
+                            <span class="eye-open" hidden>👀</span>
+                        </button>
+                    </div>
+                </label>
+                <p class="para"></p>
+                <div class="check">
+                    <label for="remember">
+                        <input type="checkbox" name="remember"> Remember Me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" id="btn">LOGIN</button>
+                <p class="login-message" id="login-message" role="status" aria-live="polite"></p>
+            </form>
+                <div class="foot">
+                <p>Don't have an account? <a href="SignIn.html">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="JS/login.js"></script>
+</body>
+
+</html>

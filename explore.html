@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/explore.css">
+</head>
+
+<body>
+    <div class="cover">
+        <header id="home">
+            <section class="head">
+                <div><a href="#home"><img src="images/icon.png" alt="CampusConnect Logo" id="hero-img"></a>
+                </div>
+                <button class="hamburger" type="button" aria-label="open menu" aria-expanded="false"
+                    aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="index.html#categories">Categories</a>
+                    <a href="sell.html">Sell</a>
+                    <a href="index.html#about">About</a>
+                    <a href="dashboard.html">Profile</a>
+                    <div id="nav-icon">
+                        <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass"
+                                    id="search-all">🔍</i></button></a>
+                        <a href="cart.html"><button><i class="fa-solid fa-cart-shopping">🛒</i><span
+                                    class="cart-count">0</span></button></a>
+                    </div>
+                </nav>
+                <div id="profile-holder"><img src="images/profile.jpg" alt="profile photo" id="profile-photo"></div>
+            </section>
+        </header>
+        <main>
+            <div id="explore-head">
+                <h2>Explore Products</h2>
+                <p>Find exactly what you need from trusted students from your campus.</p>
+            </div>
+            <section class="filters">
+                <div class="filter-head">
+                    <p>Filters</p>
+                    <button id="clear-btn">Clear all</button>
+                </div>
+                <div class="categories">
+                    <h4>Category</h4>
+                    <div>
+                        <label for="">
+                            <input type="checkbox" value="1" class="category-filter">Electronics
+                        </label>
+                        <p class="number-of-products ">(5)</p>
+                    </div>
+                    <div>
+                        <label for="">
+                            <input type="checkbox" value="2" class="category-filter">Fashion
+                        </label>
+                        <p class="number-of-products ">(5)</p>
+                    </div>
+                    <div>
+                        <label for="">
+                            <input type="checkbox" value="3" class="category-filter">Shoes
+                        </label>
+                        <p class="number-of-products ">(5)</p>
+                    </div>
+                    <div>
+                        <label for="">
+                            <input type="checkbox" value="6" class="category-filter">Books
+                        </label>
+                        <p class="number-of-products ">(5)</p>
+                    </div>
+                    <div>
+                        <label for="">
+                            <input type="checkbox" value="4" class="category-filter">Homes & Livings
+                        </label>
+                        <p class="number-of-products ">(5)</p>
+                    </div>
+                    <div>
+                        <label for="">
+                            <input type="checkbox" value="5" class="category-filter">Others
+                        </label>
+                        <p class="number-of-products ">(5)</p>
+                    </div>
+                </div>
+
+                <div class="price-range">
+                    <h4>Price Range</h4>
+                    <label for="">
+                        <input type="radio" name="price" value="1">Any Price
+                    </label>
+
+                    <label for="">
+                        <input type="radio" name="price" value="2">&#8358;0 - &#8358;50,000
+                    </label>
+
+                    <label for="">
+                        <input type="radio" name="price" value="3">&#8358;50,001 - &#8358;100,000
+                    </label>
+
+                    <label for="">
+                        <input type="radio" name="price" value="4">&#8358;100,001 - &#8358;200,000
+                    </label>
+
+                    <label for="">
+                        <input type="radio" name="price" value="5">&#8358;200,001+
+                    </label>
+
+                </div>
+                <div class="uni-input">
+                    <label for="university">
+                        <p>University</p>
+                        <input type="text" id="university" name="university" list="universities"
+                            placeholder="Enter your university">
+                        <datalist id="universities">
+                            <option value="UNN"></option>
+                            <option value="Unilag"></option>
+                            <option value="Uniben"></option>
+                            <option value="Shanahan"></option>
+                            <option value="Futo"></option>
+                            <option value="Unizik"></option>
+                            <option value="COOU"></option>
+                            <option value="LASU"></option>
+                            <option value="ABU"></option>
+                            <option value="University of Ibadan"></option>
+                        </datalist>
+                    </label>
+                </div>
+            </section>
+            <a id="top" href="#home"><button type="button">Back to top</button></a>
+
+            <div class="sort">
+                <label for="search" id="search">
+                    <a href="#search-all"></a><input type="text" id="search" name="search"
+                        placeholder="🔍 Search products...">
+                </label>
+
+                <label for="sorts" id="sorts">
+                    <input type="text" name="sorts" id="sorts" list="sortOptions" placeholder="sort by::">
+                    <datalist id="sortOptions">
+                        <option value="Newest"></option>
+                        <option value="Oldest"></option>
+                        <option value="Recently"></option>
+                    </datalist>
+                </label>
+            </div>
+
+            <section class="product-container">
+                <div class="product-card" data-category-id="1">
+                    <img src="images/electronics/earbuds.jpg" alt="earbud img">
+                    <h4>Earbuds</h4>
+                    <p>&#8358;30,000</p>
+                    <span>⭐⭐⭐⭐ (3.5)</span>
+                    <button class="add-to-cart" data-id="101" data-name="Earbuds" data-price="30,000"
+                        data-image="images/electronics/earbuds.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="5">
+                    <img src="images/others/backpack.jpg" alt="backpack img">
+                    <h4>Backpack</h4>
+                    <p>&#8358;150,000</p>
+                    <span>⭐⭐⭐⭐⭐ (5.0)</span>
+                    <button class="add-to-cart" data-id="102" data-name="Backpack" data-price="150,000"
+                        data-image="images/others/backpack.jpg">
+                        Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="2">
+                    <img src="images/fashion/jersey.jpg" alt="girls cloth">
+                    <h4>Barca Jersey</h4>
+                    <p>&#8358;60,000</p>
+                    <span>⭐⭐⭐⭐ (4.7)</span>
+                    <button class="add-to-cart" data-id="103" data-name="Barca Jersey" data-price="60,000"
+                        data-image="images/fashion/jersey.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="3">
+                    <img src="images/shoes/nike.jpg" alt="nike shoe">
+                    <h4>Nike Air force 1</h4>
+                    <p>&#8358;65,000</p>
+                    <span>⭐⭐⭐⭐⭐ (4.7)</span>
+                    <button class="add-to-cart" data-id="104" data-name="Nike Air Force 1" data-price="65,000"
+                        data-image="images/shoes/nike.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="4">
+                    <img src="images/home/wall clock.jpg" alt="wall clock img">
+                    <h3>Wall Clock</h3>
+                    <p>&#8358;270,000</p>
+                    <span>⭐⭐⭐⭐⭐ (4.5)</span>
+                    <button class="add-to-cart" data-id="105" data-name="Wall Clock" data-price="270,000"
+                        data-image="images/home/wall clock.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="5">
+                    <img src="images/others/bracelet.jpg" alt="bracelet img">
+                    <h3>Ice Bracelet</h3>
+                    <p>&#8358;120,000</p>
+                    <span>⭐⭐⭐⭐⭐ (4.6)</span>
+                    <button class="add-to-cart" data-id="106" data-name="Ice Bracelet" data-price="120,000"
+                        data-image="images/others/bracelet.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="1">
+                    <img src="images/electronics/charger.jpg" alt="charger img">
+                    <h3>Charger</h3>
+                    <p>&#8358;19,000</p>
+                    <span>⭐⭐⭐⭐ (4.3)</span>
+                    <button class="add-to-cart" data-id="107" data-name="Charger" data-price="19,000"
+                        data-image="images/electronics/charger.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="2">
+                    <img src="images/fashion/baggy jeans.jpg" alt="baggie jean img">
+                    <h3>Baggy Jeans</h3>
+                    <p>&#8358;55,000</p>
+                    <span>⭐⭐⭐⭐⭐ (4.8)</span>
+                    <button class="add-to-cart" data-id="108" data-name="Baggy Jeans" data-price="55,000"
+                        data-image="images/fashion/baggy jeans.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="3">
+                    <img src="images/shoes/sneakers.jpg" alt="sneakers shoe img">
+                    <h3>Sneaker</h3>
+                    <p>&#8358;70,000</p>
+                    <span>⭐⭐⭐⭐⭐ (5.0)</span>
+                    <button class="add-to-cart" data-id="109" data-name="Sneaker" data-price="70,000"
+                        data-image="images/shoes/sneakers.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="4">
+                    <img src="images/home/art.jpg" alt="wall art img">
+                    <h3>Wall Art</h3>
+                    <p>&#8358;250,000</p>
+                    <span>⭐⭐⭐⭐⭐ (5.0)</span>
+                    <button class="add-to-cart" data-id="110" data-name="Wall Art" data-price="250,000"
+                        data-image="images/home/art.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="5">
+                    <img src="images/others/rolex.jpg" alt="rolex wristwatch img">
+                    <h3>Rolex</h3>
+                    <p>&#8358;180,000</p>
+                    <span>⭐⭐⭐⭐ (4.0)</span>
+                    <button class="add-to-cart" data-id="111" data-name="Rolex" data-price="180,000"
+                        data-image="images/others/rolex.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="2">
+                    <img src="images/fashion/hoddie.jpg" alt="hoddie img">
+                    <h3>Hoddie</h3>
+                    <p>&#8358;40,000</p>
+                    <span>⭐⭐⭐⭐ (4.0)</span>
+                    <button class="add-to-cart" data-id="112" data-name="Hoddie" data-price="40,000"
+                        data-image="images/fashion/hoddie.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="1">
+                    <img src="images/electronics/fan.jpg" alt="handfan img">
+                    <h3>HandFan</h3>
+                    <p>&#8358;35,000</p>
+                    <span>⭐⭐⭐⭐ (4.2)</span>
+                    <button class="add-to-cart" data-id="113" data-name="HandFan" data-price="35,000"
+                        data-image="images/electronics/fan.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="3">
+                    <img src="images/shoes/TIMBERLAND.jpg" alt="timberland img">
+                    <h3>Timberland</h3>
+                    <p>&#8358;80,000</p>
+                    <span>⭐⭐⭐⭐⭐ (5.0)</span>
+                    <button class="add-to-cart" data-id="114" data-name="Timberland" data-price="80,000"
+                        data-image="images/shoes/TIMBERLAND.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="4">
+                    <img src="images/home/mirror.jpg" alt="mirror img">
+                    <h3>Wall Mirror</h3>
+                    <p>&#8358;150,000</p>
+                    <span>⭐⭐⭐⭐⭐ (4.9)</span>
+                    <button class="add-to-cart" data-id="115" data-name="Wall Mirror" data-price="150,000"
+                        data-image="images/home/mirror.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="5">
+                    <img src="images/others/waterbottle.jpg" alt="waterbottle img">
+                    <h3>Waterbottle</h3>
+                    <p>&#8358;40,000</p>
+                    <span>⭐⭐⭐⭐⭐ (4.5)</span>
+                    <button class="add-to-cart" data-id="116" data-name="Waterbottle" data-price="40,000"
+                        data-image="images/others/waterbottle.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="3">
+                    <img src="images/shoes/slides.jpg" alt="slide slippers">
+                    <h3>Slides</h3>
+                    <p>&#8358;75,000</p>
+                    <span>⭐⭐⭐⭐ (4.5)</span>
+                    <button class="add-to-cart" data-id="117" data-name="Slides" data-price="75,000"
+                        data-image="images/shoes/slides.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="1">
+                    <img src="images/electronics/power bank.jpg" alt="power bank img">
+                    <h3>Powerbank</h3>
+                    <p>&#8358;20,000</p>
+                    <span>⭐⭐⭐⭐ (4.3)</span>
+                    <button class="add-to-cart" data-id="118" data-name="Powerbank" data-price="20,000"
+                        data-image="images/electronics/power bank.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="2">
+                    <img src="images/fashion/shorts.jpg" alt=" designer shorts img">
+                    <h3>Shorts</h3>
+                    <p>&#8358;50,000</p>
+                    <span>⭐⭐⭐⭐ (4.6)</span>
+                    <button class="add-to-cart" data-id="119" data-name="Shorts" data-price="50,000"
+                        data-image="images/fashion/shorts.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="4">
+                    <img src="images/home/throw pillows.jpg" alt="throw pillow img">
+                    <h3>Throw pillow</h3>
+                    <p>&#8358;210,000</p>
+                    <span>⭐⭐⭐⭐ (4.3)</span>
+                    <button class="add-to-cart" data-id="120" data-name="Throw pillow" data-price="210,000"
+                        data-image="images/home/throw pillows.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="5">
+                    <img src="images/others/sunglasses.jpg" alt="sunglasse img">
+                    <h3>Sunglass</h3>
+                    <p>&#8358;80,000</p>
+                    <span>⭐⭐⭐⭐ (4.2)</span>
+                    <button class="add-to-cart" data-id="121" data-name="Sunglass" data-price="80,000"
+                        data-image="images/others/sunglasses.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="4">
+                    <img src="images/home/basket.jpg" alt="basket img">
+                    <h3>Cloth basket</h3>
+                    <p>&#8358;110,000</p>
+                    <span>⭐⭐⭐⭐ (3.9)</span>
+                    <button class="add-to-cart" data-id="122" data-name="Cloth basket" data-price="110,000"
+                        data-image="images/home/basket.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="3">
+                    <img src="images/shoes/coporate shoe.jpg" alt="coporate shoe img">
+                    <h3>Loafers</h3>
+                    <p>&#8358;100,000</p>
+                    <span>⭐⭐⭐⭐⭐ (5.0)</span>
+                    <button class="add-to-cart" data-id="123" data-name="Loafers" data-price="100,000"
+                        data-image="images/shoes/coporate shoe.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="2">
+                    <img src="images/fashion/polo.jpg" alt="polo img">
+                    <h3>White Polo</h3>
+                    <p>&#8358;53,000</p>
+                    <span>⭐⭐⭐⭐ (4.2)</span>
+                    <button class="add-to-cart" data-id="124" data-name="White Polo" data-price="53,000"
+                        data-image="images/fashion/polo.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="1">
+                    <img src="images/electronics/phone pouch.jpg" alt="phone pouch img">
+                    <h3>Pouch</h3>
+                    <p>&#8358;25,000</p>
+                    <span>⭐⭐⭐⭐ (4.4)</span>
+                    <button class="add-to-cart" data-id="125" data-name="Pouch" data-price="25,000"
+                        data-image="images/electronics/phone pouch.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="6">
+                    <img src="images/book.jpg" alt="book img">
+                    <h3>Novel</h3>
+                    <p>&#8358;20,000</p>
+                    <span>⭐⭐⭐ (3.5)</span>
+                    <button class="add-to-cart" data-id="126" data-name="Novel" data-price="20,000"
+                        data-image="images/book.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="1">
+                    <img src="images/electronics/headset.jpg" alt="headset img">
+                    <h3>Headset JBL</h3>
+                    <p>&#8358;35,000</p>
+                    <span>⭐⭐⭐⭐ (4.0)</span>
+                    <button class="add-to-cart" data-id="127" data-name="Headset JBL" data-price="35,000"
+                        data-image="images/electronics/headset.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="2">
+                    <img src="images/fashion/polo and nicker.jpg" alt="polo and knicker img">
+                    <h3>Polo & short</h3>
+                    <p>&#8358;95,000</p>
+                    <span>⭐⭐⭐⭐⭐ (4.8)</span>
+                    <button class="add-to-cart" data-id="128" data-name="Polo & short" data-price="95,000"
+                        data-image="images/fashion/polo and nicker.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="3">
+                    <img src="images/shoes/ladies shoe.jpg" alt="heels img">
+                    <h3>Heels</h3>
+                    <p>&#8358;60,000</p>
+                    <span>⭐⭐⭐⭐ (3.9)</span>
+                    <button class="add-to-cart" data-id="129" data-name="Heels" data-price="60,000"
+                        data-image="images/shoes/ladies shoe.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category-id="5">
+                    <img src="images/others/umbrella.jpg" alt="umbrella img">
+                    <h3>Umbrella</h3>
+                    <p>&#8358;95,000</p>
+                    <span>⭐⭐⭐⭐⭐ (4.8)</span>
+                    <button class="add-to-cart" data-id="130" data-name="Umbrella" data-price="95,000"
+                        data-image="images/others/umbrella.jpg">Add to Cart</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="JS/common.js"></script>
+    <script src="JS/explore.js"></script>
+</body>
+
+</html>

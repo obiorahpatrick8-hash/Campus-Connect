@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="home">
+        <section class="head">
+            <div><a href="#home"><img src="images/icon.png" alt="CampusConnect Logo" id="hero-imgs"></a>
+            </div>
+            <button class="hamburger" type="button" aria-label="open menu" aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-links">
+                <a href="#home">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="#categories">Categories</a>
+                <a href="#sell">Sell</a>
+                <a href="#about">About</a>
+                <a href="dashboard.html">Profile</a>
+
+                <div id="nav-icon">
+                    <a href="explore.html"><button><i class=" glass">🔍</i></button></a>
+                    <a href="cart.html"><button><i class="fa-solid fa-cart-shopping">🛒</i><span
+                                class="cart-count">0</span></button></a>
+                    <a href="login.html" id="login">Login/SignIn</a>
+                </div>
+            </nav>
+        </section>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Buy.Sell.Connect.</h2>
+                <span>Right on Campus.</span>
+                <p>CampusConnect is the ultimate marketplace for university students. Buy and sell trusted products
+                    within your campus community.</p>
+                <label for="search" id="search">
+                    <input type="text" id="search" name="search"
+                        placeholder="🔍search for products, eg. phones, laptops & shoes">
+                </label>
+                <div class="down">
+                    <div>
+                        <h4>Verified Students Only</h4>
+                        <p>Sole & trusted community</p>
+                    </div>
+                    <div>
+                        <h4>Secure Transactions</h4>
+                        <p>Buy with confidence</p>
+                    </div>
+                    <div>
+                        <h4>Multiple Universities</h4>
+                        <p>Join Students Nationwide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="category-card" id="categories">
+            <div id="card-head">
+                <h2 id="explore">Shop By Category</h2>
+                <a href="explore.html"><button>view all</button></a>
+            </div>
+            <div class="container">
+                <div class="explore">
+                    <img src="images/elect image.jpg" alt="elect-img">
+                    <h3>Electronics</h3>
+                    <p>Phones, Laptops, Gadgets</p>
+                    <span><a class="category-view" href="explore.html?category=1">View</a></span>
+                </div>
+                <div class="explore">
+                    <img src="images/cloth.jpg" alt="fashion-img">
+                    <h3>Fashion</h3>
+                    <p>Clothes, Bags , Accessories</p>
+                    <span><a class="category-view" href="explore.html?category=2">View</a></span>
+                </div>
+                <div class="explore">
+                    <img src="images/shoe.jpg" alt="shoe-img">
+                    <h3>Shoes</h3>
+                    <p>Sneakers, Sandals, Boots</p>
+                    <span><a class="category-view" href="explore.html?category=3">View</a></span>
+                </div>
+                <div class="explore">
+                    <img src="images/book.jpg" alt="books-img">
+                    <h3>Books</h3>
+                    <p>Textbooks, Novels</p>
+                    <span><a class="category-view" href="explore.html?category=6">View</a></span>
+                </div>
+                <div class="explore">
+                    <img src="images/home.jpg" alt="home-img">
+                    <h3>Home & Living</h3>
+                    <p>Furniture, Kitchen , more</p>
+                    <span><a class="category-view" href="explore.html?category=4">View</a></span>
+                </div>
+                <div class="explore">
+                    <img src="images/more.png" alt="more-icon">
+                    <h3>Others</h3>
+                    <p>Sports, tools</p>
+                    <span><a class="category-view" href="explore.html?category=5">View</a></span>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div id="product-head">
+                <h2>Featured Product</h2>
+                <a href="explore.html"><button>view all</button></a>
+            </div>
+            <div class="product-container">
+                <div class="product-cards">
+                    <img src="images/fan.jpg" alt="fan-img">
+                    <h4>HandFan</h4>
+                    <p>&#8358;35,000</p>
+                    <p class="uni"></p>
+                    <p>verified student</p>
+                    <span>⭐ (4.2)</span>
+                    <span class="cart-action"><button class="add-to-cart" data-id="113" data-name="HandFan"
+                            data-price="35,000" data-image="images/electronics/fan.jpg">Add To Cart</button></span>
+                </div>
+                <div class="product-cards">
+                    <img src="images/nike.jpg" alt="Nike air force-img">
+                    <h4>Nike Air Force1</h4>
+                    <p>&#8358;65,000</p>
+                    <p class="uni"></p>
+                    <p>verified student</p>
+                    <span>⭐ (4.7)</span>
+                    <span class="cart-action"><button class="add-to-cart" data-id="104" data-name="Nike Air Force 1"
+                            data-price="65,000" data-image="images/shoes/nike.jpg">Add To Cart</button></span>
+                </div>
+                <div class="product-cards">
+                    <img src="images/earbuds.jpg" alt="earbuds-img">
+                    <h4>Earbuds</h4>
+                    <p>&#8358;30,000</p>
+                    <p class="uni"></p>
+                    <p>verified student</p>
+                    <span>⭐ (3.5)</span>
+                    <span class="cart-action"><button class="add-to-cart" data-id="101" data-name="Earbuds"
+                            data-price="30,000" data-image="images/electronics/earbuds.jpg">Add To Cart</button></span>
+                </div>
+                <div class="product-cards">
+                    <img src="images/hoddie.jpg" alt="hoddie-img">
+                    <h4>ChampionHoddie</h4>
+                    <p>&#8358;40,000</p>
+                    <p class="uni"></p>
+                    <p>verified student</p>
+                    <span>⭐ (4.0)</span>
+                    <span class="cart-action"><button class="add-to-cart" data-id="112" data-name="Hoddie"
+                            data-price="40,000" data-image="images/fashion/hoddie.jpg">Add To Cart</button></span>
+                </div>
+                <div class="product-cards">
+                    <img src="images/jersey.jpg" alt="jersey-img">
+                    <h4>Barca Jersey</h4>
+                    <p>&#8358;60,000</p>
+                    <p class="uni"></p>
+                    <p>verified student</p>
+                    <span>⭐ (4.7)</span>
+                    <span class="cart-action"><button class="add-to-cart" data-id="103" data-name="Barca Jersey"
+                            data-price="60,000" data-image="images/fashion/jersey.jpg">Add to Cart</button></span>
+                </div>
+                <div class="product-cards">
+                    <img src="images/baggy jeans.jpg" alt="more-icon">
+                    <h4>Baggie Jeans</h4>
+                    <p>&#8358;55,000</p>
+                    <p class="uni"></p>
+                    <p>verified student</p>
+                    <span>⭐ (4.8)</span>
+                    <span class="cart-action"><button class="add-to-cart" data-id="108" data-name="Baggy Jeans"
+                            data-price="55,000" data-image="images/fashion/baggy jeans.jpg">Add To Cart</button></span>
+                </div>
+            </div>
+        </section>
+        <section class="sell" id="sell">
+            <h3>Turn Your Unused Items</h3>
+            <h4>Into Cash!</h4>
+            <p>Sell what you don't need and make money while helping other students</p>
+            <a href="sell.html"><button type="button">Start selling</button></a>
+        </section>
+        <section class="UNI">
+            <div class="uni-head">
+                <h2>Popular Universities</h2>
+                <!-- <button type="button">view all</button> -->
+            </div>
+            <div class="Uni-cards-container">
+                <div class="uni-cards">
+                    <img src="images/shan.png" alt="shanahan-logo">
+                    <h4>SUO</h4>
+                    <p>Shanahan University, Onitsha</p>
+                </div>
+                <div class="uni-cards">
+                    <img src="images/UNN.jpg" alt="UNN-logo">
+                    <h4>UNN</h4>
+                    <p>University of Nigeria, Nsuska</p>
+                </div>
+                <div class="uni-cards">
+                    <img src="images/FUTO.jpg" alt="futo-logo">
+                    <h4>FUTO</h4>
+                    <p>Federal University of Technology, Owerri</p>
+                </div>
+                <div class="uni-cards">
+                    <img src="images/UNIZIK.jpg" alt="unizik-logo">
+                    <h4>UNIZIK</h4>
+                    <p>Nnamdi Azikwe University, Awka</p>
+                </div>
+                <div class="uni-cards">
+                    <img src="images/UNIBEN.jpg" alt="uniben-logo">
+                    <h4>UNIBEN</h4>
+                    <p>University of Benin, Benin city</p>
+                </div>
+                <div class="uni-cards">
+                    <img src="images/UNILAG.jpg" alt="more-icon">
+                    <h4>UNILAG</h4>
+                    <p>University of Lagos</p>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="info-head">
+                <h3>How It Works</h3>
+            </div>
+            <div class="info-container">
+                <div class="info-cards">
+                    <p class="num">1</p>
+                    <p class="test"><b>Create Account</b></p>
+                    <p>Sign up and select your University.</p>
+                </div>
+                <div class="info-cards">
+                    <p class="num">2</p>
+                    <p class="test"><b>Get Verified</b></p>
+                    <p>Provide your student details for verification.</p>
+                </div>
+                <div class="info-cards">
+                    <p class="num">3</p>
+                    <p class="test"><b>Explore & Buy/Sell</b></p>
+                    <p>Browse Product or list your own.</p>
+                </div>
+                <div class="info-cards">
+                    <p class="num">4</p>
+                    <p class="test"><b>Connect & Transact</b></p>
+                    <p>Chat with sellers and complete your purchase.</p>
+                </div>
+            </div>
+        </section>
+        <section id="dash">
+            <h3> Join Thousand Of Students already</h3>
+            <span>Using CampusConnect!.</span>
+            <p>Your Campus. Your marketplace.</p>
+            <a href="explore.html"><button type="button">Get Started</button></a>
+        </section>
+        <section id="about">
+            <div class="about-container">
+                <div class="quick-links">
+                    <b>Quick links</b>
+                    <a href="#home">Home</a>
+                    <a href="#explore">Explore</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#sell">Sell</a>
+                    <a href="dashboard.html#feedback">Feedback</a>
+                    <a href="#about">About</a>
+                </div>
+                <div>
+                    <b>Support</b>
+                    <p>Help Center</p>
+                    <p>Contact Us</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div>
+                    <b>Follow Us</b><br>
+                    <a href="https://www.Instagram.com" id="instagram-link"><img src="images/instagram.jpg"
+                            alt="instagram logo" width="30px" height="30px"></a>
+                    <a href="https://www.X.com" id="X-link"><img src="images/x.jpg" alt="X logo" width="30px"
+                            height="30px"></a>
+                    <a href="https://www.facebook.com" id="facebook-link"><img src="images/facebook.jpg"
+                            alt="facebook logo" width="30px" height="30px"></a>
+                    <a href="https://www.youtube.com" id="youtube-link"><img src="images/youtube.jpg" alt="youtube logo"
+                            width="30px" height="30px"></a>
+                </div>
+            </div>
+            <div><a class="btn" href="#home">Back To Top</a></div>
+        </section>
+    </main>
+    <footer id="foot">
+        <div class="foot-container">
+            <div id="logo">
+                <img src="images/icon.png" alt="campusconnect-logo" id="foot-image">
+                <p>Your Campus. Your marketplace.</p>
+            </div>
+            <div class="quick-links">
+                <b>Quick links</b>
+                <a href="#home">Home</a>
+                <a href="#explore">Explore</a>
+                <a href="#categories">Categories</a>
+                <a href="#sell">Sell</a>
+                <a href="dashboard.html#feedback">Feedback</a>
+                <a href="#about">About</a>
+            </div>
+            <div>
+                <b>Support</b>
+                <p>Help Center</p>
+                <p>Contact Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div>
+                <b>Follow Us</b><br>
+                <a href="https://www.Instagram.com" id="instagram-link"><img src="images/instagram.jpg"
+                        alt="instagram logo" width="30px" height="30px"></a>
+                <a href="https://www.X.com" id="X-link"><img src="images/x.jpg" alt="X logo" width="30px"
+                        height="30px"></a>
+                <a href="https://www.facebook.com" id="facebook-link"><img src="images/facebook.jpg" alt="facebook logo"
+                        width="30px" height="30px"></a>
+                <a href="https://www.youtube.com" id="youtube-link"><img src="images/youtube.jpg" alt="youtube logo"
+                        width="30px" height="30px"></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 CampusConnect. All rights reserved.</p>
+    </footer>
+    <script src="JS/common.js"></script>
+    <script src="JS/explore.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <div class="cover">
+        <header id="home">
+            <section class="head">
+                <div><a href="#home"><img src="images/icon.png" alt="CampusConnect Logo" id="hero-img"></a>
+                </div>
+                <button class="hamburger" type="button" aria-label="open menu" aria-expanded="false"
+                    aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="index.html#categories">Categories</a>
+                    <a href="sell.html">Sell</a>
+                    <a href="#about">About</a>
+                    <a href="dashboard.html">Profile</a>
+                    <div id="nav-icon">
+                        <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass">🔍</i></button></a>
+                        <a href="cart.html"><button><i class="fa-solid fa-cart-shopping">🛒</i><span class="cart-count">0</span></button></a>
+                    </div>
+                </nav>
+                <div class="profile-holder"><img src="images/profile.jpg" alt="profile photo" id="profile-photo"></div>
+            </section>
+        </header>
+        <main>
+            <div class="head-bar">
+                <h2>Your <span>Cart</span></h2>
+                <p>Review your items before checkout</p>
+            </div>
+
+            <section class="cart-container">
+                <div class="cart-head">
+                    <p>🛒Cart items (<span class="item-count">0</span>)</p>
+                    <button type="button" id="clear-cart">🗑️Clear Cart</button>
+                </div>
+
+                <div class="cart-items">
+
+                </div>
+
+            </section>
+
+            <a href="explore.html"><button id="shop">Continue Shopping</button></a>
+            <section class="amount-container">
+                <div id="amount">
+                    <span>Subtotal: <b class="money" id="subtotal">&#8358;0</b></span>
+                    <span>Shipping: <b class="money" id="shipping">&#8358;0</b></span>
+                    <div class="line"></div>
+                    <span>Total: <b class="money" id="total">&#8358;0</b></span>
+                </div>
+                <a href="checkout.html"><button id="checkout">Proceed to Checkout</button></a>
+            </section>
+
+            <div class="delivery">
+                <div>
+                    <h3>Fast Delivery</h3>
+                    <p>Across Nigeria</p>
+                </div>
+                <div>
+                    <h3>Secure Payments</h3>
+                    <p>Your data is safe</p>
+                </div>
+                <div>
+                    <h3>24/7 Support</h3>
+                    <p>We're here to help</p>
+                </div>
+                <div>
+                    <h3>Best Quality</h3>
+                    <p>Shop with confidence</p>
+                </div>
+            </div>
+        </main>
+        <footer class="foot">
+            <div class="foot-container">
+                <div><a href="#home"><img src="images/icon.png" alt="logo" id="logo"></a></div>
+                <div id="quick-links">
+                    <b>Quick links</b>
+                    <a href="index.html">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="index.html#categories">Categories</a>
+                    <a href="sell.html">Sell</a>
+                    <a href="index.html#about" id="about">About</a>
+                    <a href="dashboard.html#feedback">Feedback</a>
+                </div>
+                <div id="support">
+                    <b>Support</b>
+                    <p>FAQs</p>
+                    <p>Shipping Info</p>
+                    <p>Return Policy</p>
+                    <p>Privacy Policy</p>
+                </div>
+
+                <div id="follow">
+                    <b>Follow Us</b><br>
+                    <a href="https://www.Instagram.com" id="instagram-link"><img src="images/instagram.jpg"
+                            alt="instagram logo" width="30px" height="30px"></a>
+                    <a href="https://www.X.com" id="X-link"><img src="images/x.jpg" alt="X logo" width="30px"
+                            height="30px"></a>
+                    <a href="https://www.facebook.com" id="facebook-link"><img src="images/facebook.jpg"
+                            alt="facebook logo" width="30px" height="30px"></a>
+                    <a href="https://www.youtube.com" id="youtube-link"><img src="images/youtube.jpg" alt="youtube logo"
+                            width="30px" height="30px"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="JS/common.js"></script>
+    <script src="JS/cart.js"></script>
+</body>
+
+</html>

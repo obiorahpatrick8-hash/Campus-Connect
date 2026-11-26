@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sign-container">
+            <div id="icon">
+                <img src="images/icon.png" alt="logo">
+            </div>
+            <div class="head">
+                <h2>Create Account</h2>
+                <p>Add Your details to get started!</p>
+            </div>
+            <form action="" id="form">
+                <label for="name">
+                    <p>Fullname</p>
+                    <input type="text" name="name" id="name" placeholder="John doe" required>
+                </label>
+                <p class="para"></p>
+                <label for="number">
+                    <p>Matric Number</p>
+                    <input type="number" name="number" id="number" placeholder="e.g.  2025/310***" required>
+                </label>
+                <p class="para"></p>
+                <label for="university">
+                    <p>University</p>
+                    <input type="text" id="university" name="university" list="universities"
+                        placeholder="Enter your university" required>
+                    <datalist id="universities">
+                        <option value="UNN"></option>
+                        <option value="Unilag"></option>
+                        <option value="Uniben"></option>
+                        <option value="Shanahan"></option>
+                        <option value="Futo"></option>
+                        <option value="Unizik"></option>
+                        <option value="COOU"></option>
+                        <option value="LASU"></option>
+                        <option value="ABU"></option>
+                        <option value="University of Ibadan"></option>
+                    </datalist>
+                </label>
+                <p class="para"></p>
+                <label for="email">
+                    <p>Email Address</p>
+                    <input type="email" name="email" id="email" placeholder="e.g. johndoe8@gmail.com" required>
+                </label>
+                <p class="para"></p>
+                <label for="Password">
+                    <p>Password</p>
+                    <div class="password-field">
+                        <input type="password" name="password" id="password" placeholder="Create a password" required>
+                        <button type="button" class="toggle-password" aria-label="Show password">
+                            <span class="eye-closed">👁️</span>
+                            <span class="eye-open" hidden>👀</span>
+                        </button>
+                    </div>
+                </label>
+                <p class="para"></p>
+                <button type="submit" id="register-btn">Register</button>
+                 <p class="signin-message" id="signin-message" role="status" aria-live="polite"></p>
+            </form>
+            <p id="foot">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+<script src="JS/signin.js"></script>
+</body>
+
+</html>
